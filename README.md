@@ -179,7 +179,7 @@ Harap patuhi [Kode Etik](CODE_OF_CONDUCT.md) kami dan pastikan kontribusi Anda s
 
 ## Lisensi
 
-Proyek ini dilisensikan di bawah Lisensi MIT. Lihat file [LICENSE](LICENSE) untuk detailnya.
+Proyek ini dilisensikan di bawah Lisensi MIT. Lihat file [LICENSE](LICENSE.txt) untuk detailnya.
 
 ## Kontak
 
