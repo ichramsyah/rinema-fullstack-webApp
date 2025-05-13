@@ -152,19 +152,41 @@ Untuk menjalankan RINEMA secara lokal, ikuti langkah-langkah berikut:
 
 Berikut adalah pratinjau halaman utama RINEMA :
 
--   **Halaman Beranda**: Menyambut pengguna untuk menjelajahi sinema Indonesia.
+-   **Halaman Beranda**
     
     ![image](https://github.com/user-attachments/assets/06011c9d-28f8-4f1e-830b-0fe11ae20fe8)
 
--   **Film**: Informasi terbaru dengan .  
-    ![Detail Film](screenshots/detail-film.png)
+-   **Halaman Film**
+  
+    ![image](https://github.com/user-attachments/assets/fe9438a3-eb61-4a58-ad76-42b508804c4a)
+  
+-   **Halaman Detail Film**
+
+    ![image](https://github.com/user-attachments/assets/3785a1a1-a765-4129-99b5-d36b2463971b)
+
+-   **Forum Diskusi**
+ 
+    ![image](https://github.com/user-attachments/assets/47684a78-afa9-4712-9eb9-da43ceeffa1d)
+
+-   **Pemberian Rating**
+ 
+    ![image](https://github.com/user-attachments/assets/669a7774-fe1a-4dbd-91ff-667e74ce9f72)
+
+-   **Halaman Login** 
+
+    ![image](https://github.com/user-attachments/assets/18f61793-ddf2-45e8-9346-b7c34e34c1fa)
     
--   **Detail Film**: Informasi lengkap film dengan rating dan komentar.  
-    ![Detail Film](screenshots/detail-film.png)
--   **Forum Diskusi**: Diskusi seru antar pecinta film.  
-    ![Forum](screenshots/forum.png)
--   **Halaman Login**: Opsi masuk dengan Google atau email.  
-    ![Halaman Login](screenshots/login.png)
+-   **Halaman Register** 
+
+    ![image](https://github.com/user-attachments/assets/51a5da02-1ffc-48c1-8db5-0dfb09f2202d)
+
+-   **Halaman Profil** 
+
+    ![image](https://github.com/user-attachments/assets/8e22335f-bead-4af5-9642-469d0c3a3aa8)
+
+-   **Halaman Dashboard Admin** 
+
+    ![image](https://github.com/user-attachments/assets/029b801f-3871-429b-abad-2d8a48a91832)
 
 ## Kontribusi
 
