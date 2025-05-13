@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "caros";
+    src: url("/public/fonts/cretypeCaros.otf") format("opentype"),
+        url("/public/fonts/cretypeCaros.woff") format("woff"),
+        url("/public/fonts/cretypeCaros.woff2") format("woff2"),
+        url("/public/fonts/cretypeCaros.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Nexa";
+    src: url("/public/fonts/NexaRegular.otf") format("opentype"),
+        url("/public/fonts/NexaRegular.woff") format("woff"),
+        url("/public/fonts/NexaRegular.woff2") format("woff2"),
+        url("/public/fonts/NexaRegular.ttf") format("truetype");
+}
+
+body {
+    font-family: "caros";
+}
+
+/* index.blade.php */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgb(0, 0, 0);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(61, 69, 81);
+    border-radius: 10px;
+}
+
+/* filmterbaru-section.blade.php */
+.swiper-button-disabled {
+    background-color: transparent !important;
+    pointer-events: none;
+    cursor: default;
+    color: transparent;
+}
+
+/* ratingtertinggi-section.blade.php */
+/* Custom scrollbar-hide */
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+.scrollbar-hide {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
