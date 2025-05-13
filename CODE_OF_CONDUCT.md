@@ -34,7 +34,7 @@ Kode Etik ini berlaku di semua ruang proyek, termasuk repositori GitHub, diskusi
 
 ## Penegakan
 
-Jika Anda mengalami atau menyaksikan perilaku yang tidak dapat diterima, harap laporkan dengan menghubungi tim RINEMA di [rinema.support@paramadina.ac.id](mailto:rinema.support@paramadina.ac.id). Semua laporan akan ditinjau dan diselidiki, dengan tindakan yang dianggap perlu dan sesuai dengan situasi. Pengelola berkewajiban menjaga kerahasiaan identitas pelapor.
+Jika Anda mengalami atau menyaksikan perilaku yang tidak dapat diterima, harap laporkan dengan menghubungi tim RINEMA di [ichramsyahabdurrachman@gmail.com](mailto:ichramsyahabdurrachman@gmail.com). Semua laporan akan ditinjau dan diselidiki, dengan tindakan yang dianggap perlu dan sesuai dengan situasi. Pengelola berkewajiban menjaga kerahasiaan identitas pelapor.
 
 Pengelola dapat mengambil tindakan seperti peringatan, penghapusan kontribusi, atau larangan sementara/permanen dari proyek, tergantung pada tingkat keparahan pelanggaran.
 
@@ -42,7 +42,7 @@ Pengelola dapat mengambil tindakan seperti peringatan, penghapusan kontribusi, a
 
 Kode Etik ini diadaptasi dari [Contributor Covenant](https://www.contributor-covenant.org), versi 2.1, tersedia di [https://www.contributor-covenant.org/version/2/1/code_of_conduct.html](https://www.contributor-covenant.org/version/2/1/code_of_conduct.html).
 
-Untuk pertanyaan tentang Kode Etik ini, silakan hubungi kami di [rinema.support@paramadina.ac.id](mailto:rinema.support@paramadina.ac.id).
+Untuk pertanyaan tentang Kode Etik ini, silakan hubungi kami di [ichramsyahabdurrachman@gmail.com](mailto:ichramsyahabdurrachman@gmail.com).
 
 ## Bersama Membangun Komunitas RINEMA
 
