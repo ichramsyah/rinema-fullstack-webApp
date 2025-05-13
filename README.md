@@ -32,12 +32,15 @@ Industri perfilman Indonesia sedang mengalami masa keemasan, dengan karya berkua
 
 ## Fitur
 
--   **Rating Film**: Berikan penilaian pribadi untuk film Indonesia yang telah ditonton, ekspresikan suka atau tidak suka secara jujur.
--   **Komentar Bebas**: Tulis pemikiran dan perasaan Anda tentang film, dari kritik membangun hingga pujian tanpa batas.
+-   **Pencarian Film**: Temukan film Indonesia dengan cepat menggunakan kata kunci, seperti judul, sutradara, atau aktor.
+-   **Filter Film**: Saring film berdasarkan terpopuler, terbaru, terlawas, atau genre untuk menemukan konten yang sesuai minat Anda.
+-   **Mobile-Friendly**: Nikmati pengalaman yang mulus di perangkat mobile dengan desain responsif.
+-   **Rating Film**: Berikan penilaian pribadi untuk film yang telah ditonton, ekspresikan suka atau tidak suka secara jujur.
+-   **Komentar Bebas**: Tulis pemikiran dan perasaan Anda, dari kritik membangun hingga pujian tanpa batas.
 -   **Forum Diskusi**: Ikut serta dalam percakapan seru, bahas detail film, teori, atau kekurangan bersama pengguna lain.
--   **Profil Pengguna**: Kelola aktivitas Anda, lihat riwayat rating, komentar, dan partisipasi di forum.
+-   **Profil Pengguna**:  Kelola aktivitas Anda, lihat riwayat rating, komentar, dan partisipasi di forum.
 -   **Manajemen Akun**: Perbarui informasi profil atau hapus akun sesuai kebutuhan.
--   **Login dengan Google**: Masuk dengan cepat dan aman menggunakan akun Google Anda, memudahkan akses ke semua fitur RINEMA.
+-   **Login dengan Google**: Masuk dengan cepat dan aman menggunakan akun Google, memudahkan akses ke semua fitur.
 
 ## Teknologi
 
@@ -147,10 +150,15 @@ Untuk menjalankan RINEMA secara lokal, ikuti langkah-langkah berikut:
 
 ## Tangkapan Layar
 
-Berikut adalah pratinjau halaman utama RINEMA (ganti dengan gambar asli di repositori Anda):
+Berikut adalah pratinjau halaman utama RINEMA :
 
--   **Halaman Beranda**: Menyambut pengguna untuk menjelajahi sinema Indonesia.  
-    ![Halaman Beranda](screenshots/beranda.png)
+-   **Halaman Beranda**: Menyambut pengguna untuk menjelajahi sinema Indonesia.
+    
+    ![image](https://github.com/user-attachments/assets/06011c9d-28f8-4f1e-830b-0fe11ae20fe8)
+
+-   **Film**: Informasi terbaru dengan .  
+    ![Detail Film](screenshots/detail-film.png)
+    
 -   **Detail Film**: Informasi lengkap film dengan rating dan komentar.  
     ![Detail Film](screenshots/detail-film.png)
 -   **Forum Diskusi**: Diskusi seru antar pecinta film.  
