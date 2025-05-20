@@ -218,3 +218,4 @@ Untuk pertanyaan, umpan balik, atau peluang kolaborasi, hubungi tim RINEMA:
 -   **Email**: ichramsyahabdurrachman@gmail.com
 
 Bergabunglah dengan kami untuk merayakan sinema Indonesia bersama RINEMA! 🎥
+
