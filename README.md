@@ -62,6 +62,11 @@ RINEMA dibangun dengan teknologi modern dan andal:
 -   **Deployment**:
     -   Dihosting melalui cPanel di [https://rinemaa.paramadina.ac.id/](https://rinemaa.paramadina.ac.id/)
 
+## Kelompok
+
+-   Miftahul Fitriah (Ketua)
+-   Ichramsyah Abdurrachman
+
 ## Instalasi
 
 Untuk menjalankan RINEMA secara lokal, ikuti langkah-langkah berikut:
