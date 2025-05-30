@@ -68,6 +68,13 @@ RINEMA dibangun dengan teknologi modern dan andal:
 -   Miftahul Fitriah (Ketua)
 -   Ichramsyah Abdurrachman
 
+## UML
+
+### Class Diagram
+
+![Class Diagram](https://github.com/user-attachments/assets/49e71499-4a76-474a-b1e6-93eca50870a7)
+
+
 ## Instalasi
 
 Untuk menjalankan RINEMA secara lokal, ikuti langkah-langkah berikut:
