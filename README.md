@@ -16,6 +16,7 @@
 -   [Fitur](#fitur)
 -   [Teknologi](#teknologi)
 -   [Kelompok](#kelompok)
+-   [UML (Unifiede Modeling Language)](#UML)
 -   [Instalasi](#instalasi)
 -   [Penggunaan](#penggunaan)
 -   [Tangkapan Layar](#tangkapan-layar)
