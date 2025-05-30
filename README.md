@@ -15,6 +15,7 @@
 -   [Tentang RINEMA](#tentang-rinema)
 -   [Fitur](#fitur)
 -   [Teknologi](#teknologi)
+-   [Kelompok](#kelompok)
 -   [Instalasi](#instalasi)
 -   [Penggunaan](#penggunaan)
 -   [Tangkapan Layar](#tangkapan-layar)
