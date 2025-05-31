@@ -23,6 +23,7 @@
 -   [Fitur](#fitur)
 -   [Teknologi](#teknologi)
 -   [Struktur Proyek](#struktur-proyek--mvc-)
+-   [Struktur Database](#struktur-database)
 -   [Kelompok](#kelompok)
 -   [UML (Unifiede Modeling Language)](#UML)
 -   [Instalasi](#instalasi)
@@ -91,6 +92,79 @@ RINEMA/
 │          └── index.blade.php  # main index
 │
 └── routes/                  # Handling Route            
+```
+
+## Struktur Database
+
+```sql
+CREATE TABLE users (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    email VARCHAR(255) UNIQUE NOT NULL,
+    username VARCHAR(255) UNIQUE NOT NULL,
+    password TEXT NOT NULL,
+    role VARCHAR(50) DEFAULT 'user',
+    is_active BOOLEAN DEFAULT TRUE,
+    avatar VARCHAR(255) NULL,
+    last_login TIMESTAMP NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE films (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    description TEXT NOT NULL,
+    release_date DATE NOT NULL,
+    director VARCHAR(255) NOT NULL,
+    poster VARCHAR(255) NOT NULL,
+    duration INT NOT NULL,
+    is_active BOOLEAN DEFAULT TRUE,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE genres (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(100) UNIQUE NOT NULL
+);
+
+CREATE TABLE film_genre (
+    film_id INT REFERENCES films(id) ON DELETE CASCADE,
+    genre_id INT REFERENCES genres(id) ON DELETE CASCADE,
+    PRIMARY KEY (film_id, genre_id)
+);
+
+CREATE TABLE ratings (
+    id SERIAL PRIMARY KEY,
+    user_id INT REFERENCES users(id) ON DELETE CASCADE,
+    film_id INT REFERENCES films(id) ON DELETE CASCADE,
+    rating DECIMAL(2,1) CHECK (rating BETWEEN 0 AND 10),
+    comment TEXT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    UNIQUE (user_id, film_id)
+);
+
+CREATE TABLE forums (
+    id SERIAL PRIMARY KEY,
+    film_id INT REFERENCES films(id) ON DELETE CASCADE,
+    user_id INT REFERENCES users(id) ON DELETE CASCADE,
+    title VARCHAR(255) NOT NULL,
+    is_active BOOLEAN DEFAULT TRUE,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE forum_replies (
+    id SERIAL PRIMARY KEY,
+    forum_id INT REFERENCES forums(id) ON DELETE CASCADE,
+    user_id INT REFERENCES users(id) ON DELETE CASCADE,
+    parent_reply_id INT NULL REFERENCES forum_replies(id) ON DELETE CASCADE,
+    reply TEXT NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
 ```
 
 ## Kelompok
