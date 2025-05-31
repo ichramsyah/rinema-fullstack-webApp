@@ -77,9 +77,9 @@ RINEMA dibangun dengan teknologi modern dan andal:
 ```
 RINEMA/
 ├── app/    
-│   └── Http/
-│         ├── Controllers/  # Controller
-│         └── Models/       # Model          
+│   ├── Http/
+│   │     └── Controllers/  # Controller
+│   └── Models/             # Model          
 │
 ├── resource/
 │    └── views/             # Views
