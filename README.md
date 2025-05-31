@@ -21,7 +21,7 @@
 -   [Tentang RINEMA](#tentang-rinema)
 -   [Fitur](#fitur)
 -   [Teknologi](#teknologi)
--   [Struktur Proyek](#Struktur)
+-   [Struktur Proyek](#struktur-proyek--mvc-)
 -   [Kelompok](#kelompok)
 -   [UML (Unifiede Modeling Language)](#UML)
 -   [Instalasi](#instalasi)
