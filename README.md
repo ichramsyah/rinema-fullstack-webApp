@@ -21,6 +21,7 @@
 -   [Tentang RINEMA](#tentang-rinema)
 -   [Fitur](#fitur)
 -   [Teknologi](#teknologi)
+-   [Struktur Proyek](#Struktur)
 -   [Kelompok](#kelompok)
 -   [UML (Unifiede Modeling Language)](#UML)
 -   [Instalasi](#instalasi)
@@ -69,6 +70,27 @@ RINEMA dibangun dengan teknologi modern dan andal:
     -   Google OAuth untuk fitur Login dengan Google
 -   **Deployment**:
     -   Dihosting melalui cPanel di [https://rinemaa.paramadina.ac.id/](https://rinemaa.paramadina.ac.id/)
+
+## Struktur Proyek ( MVC )
+
+```
+RINEMA/
+├── app/    
+│   └── Http/
+│         ├── Controllers/  # Controller
+│         └── Models/       # Model          
+│
+├── resource/
+│    └── views/             # Views
+│          ├── admin/           # halaman dashboard admin
+│          ├── auth/            # halaman autentikasi (login & register)
+│          ├── error/           # halaman 404
+│          ├── komponen/        # komponen
+│          ├── page/            # halaman untuk pengguna
+│          └── index.blade.php  # main index
+│
+└── routes/                  # Handling Route            
+```
 
 ## Kelompok
 
