@@ -1,4 +1,6 @@
-# RINEMA - Platform untuk Pecinta Film Indonesia
+# RINEMA - Platform untuk Pecinta Film Indonesia 
+
+## Kelompok: Apa Bae
 
 [![Lisensi: MIT](https://img.shields.io/badge/Lisensi-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Laravel](https://img.shields.io/badge/Laravel-12-red)](https://laravel.com/)
