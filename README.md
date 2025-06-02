@@ -178,6 +178,10 @@ CREATE TABLE forum_replies (
 
 ![Class Diagram](https://github.com/user-attachments/assets/49e71499-4a76-474a-b1e6-93eca50870a7)
 
+### Use Case Diagram
+
+![usecase diagram](https://github.com/user-attachments/assets/b415e827-8202-461d-b914-bd26e3f2afd7)
+
 
 ## Instalasi
 
