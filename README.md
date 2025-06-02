@@ -184,6 +184,10 @@ CREATE TABLE forum_replies (
 
 ![usecase diagram](https://github.com/user-attachments/assets/b415e827-8202-461d-b914-bd26e3f2afd7)
 
+### Activity Diagram
+
+![Activity Diagram](https://github.com/user-attachments/assets/1bc38f7d-4d99-42e6-b5c9-9393080462ca)
+
 
 ## Instalasi
 
