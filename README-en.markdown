@@ -32,6 +32,7 @@
 - [Database Structure](#database-structure)
 - [Team](#team)
 - [UML (Unified Modeling Language)](#uml)
+- [Website Perfomance](#performa-website)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Screenshots](#screenshots)
@@ -191,6 +192,18 @@ CREATE TABLE forum_replies (
 ### Activity Diagram
 
 ![Activity Diagram](https://github.com/user-attachments/assets/1bc38f7d-4d99-42e6-b5c9-9393080462ca)
+
+## Performa Website
+
+### Pagespeed Insight
+
+- Laporan URL: [https://pagespeed.web.dev/analysis/https-rinemaa-paramadina-ac-id](https://pagespeed.web.dev/analysis/https-rinemaa-paramadina-ac-id/d474r7jp7e?form_factor=desktop)
+
+![Asset 1](https://github.com/user-attachments/assets/d5bc74eb-29a7-424b-a5dc-a3f25434f81f)
+
+### ⚠️ Access and SEO Audit Notice
+
+The Rinema website is hosted under the university subdomain paramadina.ac.id, which operates under institutional server security policies. As a result, some automated auditing tools—such as Google Lighthouse and PageSpeed Insights—may be unable to access the site properly due to server-level restrictions, typically returning an HTTP 403 (Forbidden) error. Despite this limitation, the website has been successfully indexed by Google and appears in search results, confirming that Googlebot is allowed to access and index the content. For a full performance and SEO audit, it is recommended to run Lighthouse locally using a browser.
 
 ## Installation
 
