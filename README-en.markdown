@@ -13,6 +13,8 @@
 
 ### Group: Apa Bae
 
+#### [README.md](README.md) Indonesia Ver.
+
 **RINEMA** is a digital platform dedicated to celebrating and exploring Indonesian cinema. Designed to build a passionate community of film enthusiasts, RINEMA provides a space for rating, commenting, discussing, and logging in seamlessly using a Google account. Whether you're a fan of big-screen movies or independent works, RINEMA is the place to dive into the richness of Indonesian filmmaking.
 
 🌟 **Live Demo**: Visit RINEMA at [https://rinemaa.paramadina.ac.id/](https://rinemaa.paramadina.ac.id/)
