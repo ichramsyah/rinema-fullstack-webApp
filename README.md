@@ -87,6 +87,7 @@ RINEMA/
 ├── app/    
 │   ├── Http/
 │   │     └── Controllers/  # Controller
+│   │              └── api/     # route API
 │   └── Models/             # Model          
 │
 ├── resource/
