@@ -348,8 +348,6 @@ Harap patuhi [Kode Etik](CODE_OF_CONDUCT.md) kami dan pastikan kontribusi Anda s
 
 ### Saran Kontribusi
 
--   Tingkatkan fitur pencarian dan filter (misalnya, berdasarkan genre atau sutradara).
--   Tambahkan upvote/downvote untuk komentar atau balasan bertingkat di forum.
 -   Integrasikan rekomendasi film berdasarkan aktivitas pengguna.
 -   Kembangkan alat moderasi untuk menjaga diskusi yang sehat.
 
