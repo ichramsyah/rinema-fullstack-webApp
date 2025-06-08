@@ -348,8 +348,6 @@ Please adhere to our [Code of Conduct](CODE_OF_CONDUCT.md) and ensure your contr
 
 ### Contribution Suggestions
 
-- Enhance search and filter features (e.g., by genre or director).
-- Add upvote/downvote for comments or nested replies in the forum.
 - Integrate film recommendations based on user activity.
 - Develop moderation tools to maintain healthy discussions.
 
