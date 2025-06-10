@@ -2,9 +2,6 @@
 
 namespace App\Http\Controllers;
 
-
-
-
 use App\Models\Film;
 use App\Models\Forum;
 use App\Models\User;
