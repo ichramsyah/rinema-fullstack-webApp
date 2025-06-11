@@ -58,7 +58,7 @@
             </form>
             <p class="text-gray-200 text-[12px] pt-3">
                 Sudah memiliki akun?
-                <a href="{{route('register')}}" class="text-blue-500 hover:border-b hover:border-blue-500">Sign in</a>
+                <a href="{{route('login')}}" class="text-blue-500 hover:border-b hover:border-blue-500">Sign in</a>
             </p>
             <p class="text-center text-gray-400 py-4 font-caros">or</p>
 
