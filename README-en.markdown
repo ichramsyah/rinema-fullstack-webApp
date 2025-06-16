@@ -11,15 +11,11 @@
 [![MySQL](https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white)](https://www.mysql.com/)
 [![cPanel](https://img.shields.io/badge/cPanel-FF6C2C?style=for-the-badge&logo=cpanel&logoColor=white)](https://cpanel.net/)
 
-### Group: Apa Bae
-
 #### [README.md](README.md) Indonesia Ver.
 
 **RINEMA** is a digital platform dedicated to celebrating and exploring Indonesian cinema. Designed to build a passionate community of film enthusiasts, RINEMA provides a space for rating, commenting, discussing, and logging in seamlessly using a Google account. Whether you're a fan of big-screen movies or independent works, RINEMA is the place to dive into the richness of Indonesian filmmaking.
 
 🌟 **Live Demo**: Visit RINEMA at [https://rinemaa.paramadina.ac.id/](https://rinemaa.paramadina.ac.id/)
-
-🎬 **Demo Video**: Watch the RINEMA Demo at [https://drive.google.com/demo-rinema](https://drive.google.com/file/d/1GFU2u-NRTmvaZKGEcnh3LjmsA2knm4Hj/view?usp=drive_link)
 
 ✨ **Link Design Figma**: See the design on Figma: [https://www.figma.com/rinema-design](https://www.figma.com/design/yb2RG0CQay2An0RKcYorFD/Rinema?node-id=0-1&t=BAkABHVPZgUs5MtC-1)
 
@@ -30,7 +26,6 @@
 - [Technologies](#technologies)
 - [Project Structure (MVC)](#project-structure--mvc-)
 - [Database Structure](#database-structure)
-- [Team](#team)
 - [UML (Unified Modeling Language)](#uml)
 - [Installation](#installation)
 - [Usage](#usage)
@@ -173,11 +168,6 @@ CREATE TABLE forum_replies (
     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 ```
-
-## Team
-
-- Miftahul Fitriah (Leader)
-- Ichramsyah Abdurrachman
 
 ## UML (Unified Modeling Language)
 
