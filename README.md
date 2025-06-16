@@ -11,8 +11,6 @@
 [![MySQL](https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white)](https://www.mysql.com/)
 [![cPanel](https://img.shields.io/badge/cPanel-FF6C2C?style=for-the-badge&logo=cpanel&logoColor=white)](https://cpanel.net/)
 
-### Kelompok: Apa Bae
-
 #### [README.md](README-en.markdown) English Ver.
 
 **RINEMA** adalah platform digital yang didedikasikan untuk merayakan dan mengeksplorasi sinema Indonesia. Dirancang untuk membangun komunitas pecinta film yang bersemangat, RINEMA menyediakan ruang untuk memberikan rating, berkomentar, berdiskusi, dan masuk dengan mudah menggunakan akun Google. Baik Anda penggemar film layar lebar atau karya independen, RINEMA adalah tempat untuk menyelami kekayaan perfilman Tanah Air.
@@ -30,7 +28,6 @@
 -   [Teknologi](#teknologi)
 -   [Struktur Proyek](#struktur-proyek--mvc-)
 -   [Struktur Database](#struktur-database)
--   [Kelompok](#kelompok)
 -   [UML (Unifiede Modeling Language)](#UML)
 -   [Instalasi](#instalasi)
 -   [Penggunaan](#penggunaan)
@@ -173,11 +170,6 @@ CREATE TABLE forum_replies (
     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 ```
-
-## Kelompok
-
--   Miftahul Fitriah (Ketua)
--   Ichramsyah Abdurrachman
 
 ## UML
 
