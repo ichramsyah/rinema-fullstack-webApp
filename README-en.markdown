@@ -1,3 +1,5 @@
+![image](public/images/project1.webp)
+
 # RINEMA - Platform for Indonesian Film Enthusiasts
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -21,18 +23,18 @@
 
 ## Table of Contents
 
-- [About RINEMA](#about-rinema)
-- [Features](#features)
-- [Technologies](#technologies)
-- [Project Structure (MVC)](#project-structure--mvc-)
-- [Database Structure](#database-structure)
-- [UML (Unified Modeling Language)](#uml)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Screenshots](#screenshots)
-- [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
+-   [About RINEMA](#about-rinema)
+-   [Features](#features)
+-   [Technologies](#technologies)
+-   [Project Structure (MVC)](#project-structure--mvc-)
+-   [Database Structure](#database-structure)
+-   [UML (Unified Modeling Language)](#uml)
+-   [Installation](#installation)
+-   [Usage](#usage)
+-   [Screenshots](#screenshots)
+-   [Contributing](#contributing)
+-   [License](#license)
+-   [Contact](#contact)
 
 ## About RINEMA
 
@@ -40,49 +42,49 @@ The Indonesian film industry is experiencing a golden era, with high-quality wor
 
 ### Objectives
 
-- Build an interactive platform for Indonesian film enthusiasts.
-- Foster an active, supportive community with responsible freedom of expression.
-- Provide a safe space for honest ratings, open comments, and dynamic discussions about Indonesian films.
+-   Build an interactive platform for Indonesian film enthusiasts.
+-   Foster an active, supportive community with responsible freedom of expression.
+-   Provide a safe space for honest ratings, open comments, and dynamic discussions about Indonesian films.
 
 ## Features
 
-- **Film Search**: Quickly find Indonesian films using keywords like title, director, or actor.
-- **Film Filters**: Sort films by popularity, newest, oldest, or genre to match your interests.
-- **Mobile-Friendly**: Enjoy a seamless experience on mobile devices with responsive design.
-- **Film Rating**: Share your personal rating for watched films, expressing likes or dislikes honestly.
-- **Open Comments**: Write your thoughts and feelings, from constructive criticism to limitless praise.
-- **Discussion Forum**: Join exciting conversations, discuss film details, theories, or flaws with other users.
-- **User Profile**: Manage your activities, view rating history, comments, and forum participation.
-- **Account Management**: Update profile information or delete your account as needed.
-- **Google Login**: Sign in quickly and securely using your Google account for easy access to all features.
+-   **Film Search**: Quickly find Indonesian films using keywords like title, director, or actor.
+-   **Film Filters**: Sort films by popularity, newest, oldest, or genre to match your interests.
+-   **Mobile-Friendly**: Enjoy a seamless experience on mobile devices with responsive design.
+-   **Film Rating**: Share your personal rating for watched films, expressing likes or dislikes honestly.
+-   **Open Comments**: Write your thoughts and feelings, from constructive criticism to limitless praise.
+-   **Discussion Forum**: Join exciting conversations, discuss film details, theories, or flaws with other users.
+-   **User Profile**: Manage your activities, view rating history, comments, and forum participation.
+-   **Account Management**: Update profile information or delete your account as needed.
+-   **Google Login**: Sign in quickly and securely using your Google account for easy access to all features.
 
 ## Technologies
 
 RINEMA is built with modern and reliable technologies:
 
-- **Front-end**:
-  - Laravel Blade (Templating Engine)
-  - Tailwind CSS (Styling)
-  - Vanilla JavaScript (Interactivity)
-- **Back-end**:
-  - Laravel 12 (Framework)
-  - PHP
-- **Database**:
-  - MySQL
-- **Integration**:
-  - Google OAuth for Google Login feature
-- **Deployment**:
-  - Hosted via cPanel at [https://rinemaa.paramadina.ac.id/](https://rinemaa.paramadina.ac.id/)
+-   **Front-end**:
+    -   Laravel Blade (Templating Engine)
+    -   Tailwind CSS (Styling)
+    -   Vanilla JavaScript (Interactivity)
+-   **Back-end**:
+    -   Laravel 12 (Framework)
+    -   PHP
+-   **Database**:
+    -   MySQL
+-   **Integration**:
+    -   Google OAuth for Google Login feature
+-   **Deployment**:
+    -   Hosted via cPanel at [https://rinemaa.paramadina.ac.id/](https://rinemaa.paramadina.ac.id/)
 
 ## Project Structure (MVC)
 
 ```
 RINEMA/
-├── app/    
+├── app/
 │   ├── Http/
 │   │     └── Controllers/  # Controllers
 │   │              └── api/     # API routes
-│   └── Models/             # Models          
+│   └── Models/             # Models
 │
 ├── resource/
 │    └── views/             # Views
@@ -93,7 +95,7 @@ RINEMA/
 │          ├── page/            # User pages
 │          └── index.blade.php  # Main index
 │
-└── routes/                  # Route Handling            
+└── routes/                  # Route Handling
 ```
 
 ## Database Structure
@@ -189,12 +191,12 @@ To run RINEMA locally, follow these steps:
 
 ### Prerequisites
 
-- PHP >= 8.1
-- Composer
-- MySQL
-- Node.js & npm
-- Git
-- Google Developer Account for OAuth configuration (optional for Google Login feature)
+-   PHP >= 8.1
+-   Composer
+-   MySQL
+-   Node.js & npm
+-   Git
+-   Google Developer Account for OAuth configuration (optional for Google Login feature)
 
 ### Installation Steps
 
@@ -259,9 +261,9 @@ To run RINEMA locally, follow these steps:
 
 ### Notes for Google Login
 
-- Create OAuth credentials in [Google Developer Console](https://console.developers.google.com/).
-- Add the credentials to the `.env` file as shown above.
-- Ensure the callback route (`/auth/google/callback`) matches your application settings.
+-   Create OAuth credentials in [Google Developer Console](https://console.developers.google.com/).
+-   Add the credentials to the `.env` file as shown above.
+-   Ensure the callback route (`/auth/google/callback`) matches your application settings.
 
 ## Usage
 
@@ -275,39 +277,39 @@ To run RINEMA locally, follow these steps:
 
 Here are previews of RINEMA's main pages:
 
-- **Home Page**
-  
+-   **Home Page**
+
     ![image](https://github.com/user-attachments/assets/06011c9d-28f8-4f1e-830b-0fe11ae20fe8)
 
-- **Film Page**
-  
+-   **Film Page**
+
     ![image](https://github.com/user-attachments/assets/fe9438a3-eb61-4a58-ad76-42b508804c4a)
-  
-- **Film Detail Page**
+
+-   **Film Detail Page**
 
     ![image](https://github.com/user-attachments/assets/3785a1a1-a765-4129-99b5-d36b2463971b)
 
-- **Discussion Forum**
- 
+-   **Discussion Forum**
+
     ![image](https://github.com/user-attachments/assets/47684a78-afa9-4712-9eb9-da43ceeffa1d)
 
-- **Rating Submission**
- 
+-   **Rating Submission**
+
     ![image](https://github.com/user-attachments/assets/669a7774-fe1a-4dbd-91ff-667e74ce9f72)
 
-- **Login Page** 
+-   **Login Page**
 
     ![image](https://github.com/user-attachments/assets/18f61793-ddf2-45e8-9346-b7c34e34c1fa)
-    
-- **Register Page** 
+
+-   **Register Page**
 
     ![image](https://github.com/user-attachments/assets/51a5da02-1ffc-48c1-8db5-0dfb09f2202d)
 
-- **Profile Page** 
+-   **Profile Page**
 
     ![image](https://github.com/user-attachments/assets/8e22335f-bead-4af5-9642-469d0c3a3aa8)
 
-- **Admin Dashboard Page** 
+-   **Admin Dashboard Page**
 
     ![image](https://github.com/user-attachments/assets/029b801f-3871-429b-abad-2d8a48a91832)
 
@@ -325,8 +327,8 @@ Please adhere to our [Code of Conduct](CODE_OF_CONDUCT.md) and ensure your contr
 
 ### Contribution Suggestions
 
-- Integrate film recommendations based on user activity.
-- Develop moderation tools to maintain healthy discussions.
+-   Integrate film recommendations based on user activity.
+-   Develop moderation tools to maintain healthy discussions.
 
 ## License
 
@@ -336,6 +338,6 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE.txt) f
 
 For questions, feedback, or collaboration opportunities, contact the RINEMA team:
 
-- **Email**: ichramsyahabdurrachman@gmail.com
+-   **Email**: ichramsyahabdurrachman@gmail.com
 
 Join us to celebrate Indonesian cinema with RINEMA! 🎥
