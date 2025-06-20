@@ -1,4 +1,6 @@
-# RINEMA - Platform untuk Pecinta Film Indonesia 
+![image](public/images/project1.webp)
+
+# RINEMA - Platform untuk Pecinta Film Indonesia
 
 [![Lisensi: MIT](https://img.shields.io/badge/Lisensi-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Laravel](https://img.shields.io/badge/Laravel-12-red)](https://laravel.com/)
@@ -52,7 +54,7 @@ Industri perfilman Indonesia sedang mengalami masa keemasan, dengan karya berkua
 -   **Rating Film**: Berikan penilaian pribadi untuk film yang telah ditonton, ekspresikan suka atau tidak suka secara jujur.
 -   **Komentar Bebas**: Tulis pemikiran dan perasaan Anda, dari kritik membangun hingga pujian tanpa batas.
 -   **Forum Diskusi**: Ikut serta dalam percakapan seru, bahas detail film, teori, atau kekurangan bersama pengguna lain.
--   **Profil Pengguna**:  Kelola aktivitas Anda, lihat riwayat rating, komentar, dan partisipasi di forum.
+-   **Profil Pengguna**: Kelola aktivitas Anda, lihat riwayat rating, komentar, dan partisipasi di forum.
 -   **Manajemen Akun**: Perbarui informasi profil atau hapus akun sesuai kebutuhan.
 -   **Login dengan Google**: Masuk dengan cepat dan aman menggunakan akun Google, memudahkan akses ke semua fitur.
 
@@ -78,11 +80,11 @@ RINEMA dibangun dengan teknologi modern dan andal:
 
 ```
 RINEMA/
-├── app/    
+├── app/
 │   ├── Http/
 │   │     └── Controllers/  # Controller
 │   │              └── api/     # route API
-│   └── Models/             # Model          
+│   └── Models/             # Model
 │
 ├── resource/
 │    └── views/             # Views
@@ -93,7 +95,7 @@ RINEMA/
 │          ├── page/            # halaman untuk pengguna
 │          └── index.blade.php  # main index
 │
-└── routes/                  # Handling Route            
+└── routes/                  # Handling Route
 ```
 
 ## Struktur Database
@@ -276,38 +278,38 @@ Untuk menjalankan RINEMA secara lokal, ikuti langkah-langkah berikut:
 Berikut adalah pratinjau halaman utama RINEMA :
 
 -   **Halaman Beranda**
-    
+
     ![image](https://github.com/user-attachments/assets/06011c9d-28f8-4f1e-830b-0fe11ae20fe8)
 
 -   **Halaman Film**
-  
+
     ![image](https://github.com/user-attachments/assets/fe9438a3-eb61-4a58-ad76-42b508804c4a)
-  
+
 -   **Halaman Detail Film**
 
     ![image](https://github.com/user-attachments/assets/3785a1a1-a765-4129-99b5-d36b2463971b)
 
 -   **Forum Diskusi**
- 
+
     ![image](https://github.com/user-attachments/assets/47684a78-afa9-4712-9eb9-da43ceeffa1d)
 
 -   **Pemberian Rating**
- 
+
     ![image](https://github.com/user-attachments/assets/669a7774-fe1a-4dbd-91ff-667e74ce9f72)
 
--   **Halaman Login** 
+-   **Halaman Login**
 
     ![image](https://github.com/user-attachments/assets/18f61793-ddf2-45e8-9346-b7c34e34c1fa)
-    
--   **Halaman Register** 
+
+-   **Halaman Register**
 
     ![image](https://github.com/user-attachments/assets/51a5da02-1ffc-48c1-8db5-0dfb09f2202d)
 
--   **Halaman Profil** 
+-   **Halaman Profil**
 
     ![image](https://github.com/user-attachments/assets/8e22335f-bead-4af5-9642-469d0c3a3aa8)
 
--   **Halaman Dashboard Admin** 
+-   **Halaman Dashboard Admin**
 
     ![image](https://github.com/user-attachments/assets/029b801f-3871-429b-abad-2d8a48a91832)
 
@@ -339,4 +341,3 @@ Untuk pertanyaan, umpan balik, atau peluang kolaborasi, hubungi tim RINEMA:
 -   **Email**: ichramsyahabdurrachman@gmail.com
 
 Bergabunglah dengan kami untuk merayakan sinema Indonesia bersama RINEMA! 🎥
-
