@@ -30,4 +30,9 @@ class Rating extends Model
     {
         return $this->belongsTo(Film::class);
     }
+    
+    public function genre(): BelongsTo
+    {
+        return $this->belongsTo(Genre::class);
+    }
 }

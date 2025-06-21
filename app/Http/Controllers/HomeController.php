@@ -54,13 +54,14 @@ class HomeController extends Controller
     }
 
     // Film
-
-    function film(Request $request)
+  function film(Request $request)
 {
+    // 1. Mengambil input dari request
     $genreFilter = $request->input('genre');
     $searchQuery = $request->input('search');
     $sort = $request->input('sort');
 
+    // 2. Memulai query untuk mengambil data film
     $films = FilmGenre::with('film', 'genre');
 
     if ($genreFilter) {
@@ -78,10 +79,12 @@ class HomeController extends Controller
 
     $films = $films->get();
 
+    // 3. Mengambil dan menghitung rata-rata rating untuk setiap film
     $averageRatings = Rating::groupBy('film_id')
         ->selectRaw('film_id, avg(rating) as average_rating')
         ->pluck('average_rating', 'film_id');
 
+    // 4. Memproses data untuk menyatukan film dengan genrenya
     $uniqueFilms = [];
     $filmGenres = [];
 
@@ -99,19 +102,33 @@ class HomeController extends Controller
     $filmsWithGenres = [];
     foreach ($uniqueFilms as $filmId => $film) {
         $film->genres = implode(', ', $filmGenres[$filmId]);
-
         $film->average_rating = $averageRatings->has($filmId) ? $averageRatings[$filmId] : 0;
-
         $filmsWithGenres[] = $film;
     }
+    
+    // Siapkan teks default untuk ditampilkan di tombol filter
+    $sort_text = 'Default'; 
 
-    if ($sort == 'desc') {
+    if ($sort == 'popular') {
+        $sort_text = 'Terpopuler';
         usort($filmsWithGenres, function ($a, $b) {
             return $b->average_rating <=> $a->average_rating;
         });
+    } elseif ($sort == 'latest') {
+        $sort_text = 'Terbaru';
+        usort($filmsWithGenres, function ($a, $b) {
+            // Mengurutkan berdasarkan tahun rilis, dari yang terbaru ke terlama
+            return strtotime($b->tahun_rilis) <=> strtotime($a->tahun_rilis);
+        });
+    } elseif ($sort == 'oldest') {
+        $sort_text = 'Terlawas';
+        usort($filmsWithGenres, function ($a, $b) {
+            // Mengurutkan berdasarkan tahun rilis, dari yang terlama ke terbaru
+            return strtotime($a->tahun_rilis) <=> strtotime($b->tahun_rilis);
+        });
     }
 
-    return view('pages.film', compact('filmsWithGenres'));
+    return view('pages.film', compact('filmsWithGenres', 'sort_text'));
 }
 
 // Detail Film
@@ -121,11 +138,11 @@ class HomeController extends Controller
     $ratings = Rating::where('film_id', $id)->with('user')->get();
     $averageRatings = $ratings->avg('rating');
 
-    $userHasRated = null; // Ganti $userHasRated menjadi $userHasRated
+    $userHasRated = null;
     if (Auth::check()) {
         $userHasRated = Rating::where('film_id', $id)
                             ->where('user_id', Auth::id())
-                            ->first(); // Ambil objek Rating pertama yang sesuai
+                            ->first(); 
     }
 
     $genres = FilmGenre::where('film_id', $film->id)->with('genre')->get(); 

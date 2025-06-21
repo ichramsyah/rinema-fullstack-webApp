@@ -32,11 +32,11 @@ class AuthenticatedSessionController extends Controller
     
     public function store(LoginRequest $request): RedirectResponse
     {
-        $request->authenticate(); // Proses otentikasi pengguna
-        $request->session()->regenerate(); // Regenerasi ID sesi untuk keamanan
+        $request->authenticate(); 
+        $request->session()->regenerate(); 
 
         if($request->user()->role === 'admin') {
-            return redirect('admin/dashboard/users'); // Redirect admin ke dashboard admin
+            return redirect('admin/dashboard/users');
         }
 
         if ($request->hasSession() && $request->session()->has('url.intended')) {
@@ -45,7 +45,6 @@ class AuthenticatedSessionController extends Controller
             return redirect()->to($intendedUrl);
         }
     
-        // Jika tidak ada URL intended (login langsung), redirect ke halaman home
         return redirect(url('/'));
     }
 

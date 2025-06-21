@@ -215,37 +215,53 @@ class ProfileController extends Controller
     
 
 
-    public function redirectToGoogle()
-    {
-        return Socialite::driver('google')->redirect();
+   public function handleGoogleCallback(Request $request)
+{
+    // 1. Validasi request dari frontend
+    $validator = Validator::make($request->all(), [
+        'code' => 'required|string', // Kita butuh 'code' dari frontend
+    ]);
+
+    if ($validator->fails()) {
+        return response()->json($validator->errors(), 422);
     }
 
-    public function handleGoogleCallback()
-    {
-        try {
-            $googleUser = Socialite::driver('google')->stateless()->user();
+    try {
+        // 2. Dapatkan data user dari Google menggunakan 'code'
+        // Gunakan userFromCode, bukan user() karena kita provide code secara manual
+        $googleUser = Socialite::driver('google')->stateless()->userFromCode($request->code);
 
-            if (!$googleUser->email) {
-                throw new \Exception('Email tidak tersedia dari akun Google.');
-            }
+        // 3. Buat atau perbarui user di database Anda
+        $user = User::updateOrCreate(
+            [
+                'google_id' => $googleUser->getId(),
+            ],
+            [
+                'name' => $googleUser->getName(),
+                'email' => $googleUser->getEmail(),
+                'google_token' => $googleUser->token,
+                'password' => Hash::make('password_google'), // Password acak/tetap untuk user Google
+                'email_verified_at' => now(),
+            ]
+        );
 
-            $user = User::updateOrCreate(
-                ['google_id' => $googleUser->id],
-                [
-                    'name' => $googleUser->name,
-                    'email' => $googleUser->email,
-                    'google_token' => $googleUser->token,
-                    'password' => Hash::make((string) rand(10000000, 99999999)), // Buat angka acak dan hash
-                    'email_verified_at' => $googleUser->email_verified ? now() : null,
-                ]
-            );
+        // 4. Buat API Token untuk user tersebut
+        $token = $user->createToken('google-auth-token')->plainTextToken;
 
-            Auth::login($user);
+        // 5. Kembalikan token dan data user sebagai respons JSON
+        return response()->json([
+            'message' => 'Login dengan Google berhasil.',
+            'access_token' => $token,
+            'token_type' => 'Bearer',
+            'user' => $user
+        ]);
 
-            return redirect()->intended('/profile');
-        } catch (\Exception $e) {
-            dd('Terjadi kesalahan saat login dengan Google: ' . $e->getMessage());
-            return redirect('/login')->with('error', 'Gagal login dengan Google: ' . $e->getMessage());
-        }
+    } catch (\Exception $e) {
+        // Tangani jika ada error
+        return response()->json([
+            'message' => 'Autentikasi gagal.',
+            'error' => $e->getMessage()
+        ], 401);
     }
+}
 }

@@ -16,7 +16,15 @@ class RatingResource extends JsonResource
     {
         return [
             'id' => $this->id,
-            'rating' => $this->rating,
+            'rating' => (float) $this->rating,
+            'comment' => $this->comment,
+            'last_updated' => $this->updated_at->diffForHumans(), 
+            'user' => $this->whenLoaded('user', function () {
+                return [
+                    'id' => $this->user->id,
+                    'name' => $this->user->name,
+                ];
+            }),
         ];
     }
 }

@@ -29,4 +29,23 @@ class ForumReply extends Model
     {
     return $this->hasMany(ForumReply::class, 'parent_reply_id');
     }
+
+    // --- TAMBAHKAN DUA METODE DI BAWAH INI ---
+
+    /**
+     * Mendefinisikan relasi ke "anak-anak" atau balasan dari balasan ini.
+     * Satu balasan bisa memiliki BANYAK balasan (anak).
+     */
+    public function children()
+    {
+        // Model ini memiliki banyak 'ForumReply' (anak), yang dicocokkan melalui
+        // foreign key 'parent_reply_id' dengan local key 'id' dari model ini (induk).
+        return $this->hasMany(ForumReply::class, 'parent_reply_id', 'id');
+    }
+
+    /**
+     * Mendefinisikan relasi ke "induk" atau balasan yang dibalas oleh balasan ini.
+     * Satu balasan dimiliki oleh SATU balasan (induk).
+     */
+
 }

@@ -11,8 +11,6 @@ use App\Http\Resources\GenreResource;
 use App\Models\Genre;
 
 // With Eager Loading
-
-
 class FilmApiController extends Controller
 {
     public function allFilm() {
@@ -78,7 +76,7 @@ class FilmApiController extends Controller
     public function searchFilm(Request $request){
     $searchQuery = $request->input('query');
     
-    if(empty($searchQuery)) { // Validasi Input
+    if(empty($searchQuery)) { 
         return response()->json([
             'message' => 'Mohon mengisi kolom input!'
         ], 400);
@@ -98,8 +96,6 @@ class FilmApiController extends Controller
 
     return FilmResource::collection($films);
 }
-
-
 
     public function show(Film $film){
         $film->load('genres')->loadAvg('ratings', 'rating')->loadCount('ratings');
