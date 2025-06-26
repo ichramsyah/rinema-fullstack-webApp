@@ -1,4 +1,4 @@
-
+![image](public/images/project1.webp)
 
 # RINEMA - Platform untuk Pecinta Film Indonesia
 
