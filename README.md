@@ -315,7 +315,7 @@ Endpoint ini bisa diakses secara publik.
 
 -   **Endpoint**: `PUT /user/profil`
 -   **Autentikasi**: Diperlukan (Bearer Token).
--   **Body Request (JSON)**:
+-   **Respons Sukses (200 OK)**:
     ```json
     {
         "user": {
