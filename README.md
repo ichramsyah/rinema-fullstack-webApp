@@ -287,6 +287,30 @@ Endpoint ini bisa diakses secara publik.
 -   **Autentikasi**: Diperlukan (Bearer Token).
 -   **URL Parameter**: `{reply}` (wajib): ID dari balasan yang ingin dihapus.
 
+#### 19. Mengubah Email Pribadi
+
+-   **Endpoint**: `PUT /user/update-email`
+-   **Autentikasi**: Diperlukan (Bearer Token).
+-   **Body Request (JSON)**:
+    ```json
+    {
+        "email": "emailbaru@example.com"
+    }
+    ```
+
+#### 20. Mengubah password Pribadi
+
+-   **Endpoint**: `PUT /user/update-email`
+-   **Autentikasi**: Diperlukan (Bearer Token).
+-   **Body Request (JSON)**:
+    ```json
+    {
+        "current_password": "password123",
+        "new_password": "passwordbaru123",
+        "new_password_confirmation": "passwordbaru123"
+    }
+    ```
+
 ## Struktur Proyek ( MVC )
 
 ```
