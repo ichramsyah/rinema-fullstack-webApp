@@ -300,7 +300,7 @@ Endpoint ini bisa diakses secara publik.
 
 #### 20. Mengubah password Pribadi
 
--   **Endpoint**: `PUT /user/update-email`
+-   **Endpoint**: `PUT /user/update-password`
 -   **Autentikasi**: Diperlukan (Bearer Token).
 -   **Body Request (JSON)**:
     ```json
