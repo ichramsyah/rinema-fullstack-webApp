@@ -311,6 +311,25 @@ Endpoint ini bisa diakses secara publik.
     }
     ```
 
+#### 21. Menampilkan data Pribadi
+
+-   **Endpoint**: `PUT /user/profil`
+-   **Autentikasi**: Diperlukan (Bearer Token).
+-   **Body Request (JSON)**:
+    ```json
+    {
+        "user": {
+            "id": 11,
+            "name": "demo",
+            "email": "demo@gmail.com",
+            "role": "user",
+            "email_verified_at": null,
+            "is_active": 1,
+            ...
+        }
+    }
+    ```
+
 ## Struktur Proyek ( MVC )
 
 ```
