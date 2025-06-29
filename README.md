@@ -313,7 +313,7 @@ Endpoint ini bisa diakses secara publik.
 
 #### 21. Menampilkan data Pribadi
 
--   **Endpoint**: `PUT /user/profil`
+-   **Endpoint**: `GET /user/profil`
 -   **Autentikasi**: Diperlukan (Bearer Token).
 -   **Respons Sukses (200 OK)**:
     ```json
