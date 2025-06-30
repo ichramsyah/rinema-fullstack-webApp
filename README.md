@@ -330,6 +330,16 @@ Endpoint ini bisa diakses secara publik.
     }
     ```
 
+  #### 22. Menampilkan data Rating Pribadi
+
+-   **Endpoint**: `GET /user/ratings`
+-   **Autentikasi**: Diperlukan (Bearer Token).
+
+  #### 23. Menampilkan data chat Pribadi
+
+-   **Endpoint**: `GET /user/forum-replies`
+-   **Autentikasi**: Diperlukan (Bearer Token).
+
 ## Struktur Proyek ( MVC )
 
 ```
