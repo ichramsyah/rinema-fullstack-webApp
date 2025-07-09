@@ -287,6 +287,59 @@ These endpoints are publicly accessible.
 -   **Authentication**: Required (Bearer Token).
 -   **URL Parameter**: `{reply}` (required): Reply ID.
 
+##### 19. Update Personal Email
+
+- **Endpoint**: `PUT /user/update-email`
+- **Authentication**: Required (Bearer Token).
+- **Request Body (JSON)**:
+    ```json
+    {
+        "email": "newemail@example.com"
+    }
+    ```
+
+##### 20. Update Personal Password
+
+- **Endpoint**: `PUT /user/update-password`
+- **Authentication**: Required (Bearer Token).
+- **Request Body (JSON)**:
+    ```json
+    {
+        "current_password": "password123",
+        "new_password": "newpassword123",
+        "new_password_confirmation": "newpassword123"
+    }
+    ```
+
+##### 21. Retrieve Personal Data
+
+- **Endpoint**: `GET /user/profile`
+- **Authentication**: Required (Bearer Token).
+- **Success Response (200 OK)**:
+    ```json
+    {
+        "user": {
+            "id": 11,
+            "name": "demo",
+            "email": "demo@gmail.com",
+            "role": "user",
+            "email_verified_at": null,
+            "is_active": 1,
+            ...
+        }
+    }
+    ```
+
+##### 22. Retrieve Personal Rating Data
+
+- **Endpoint**: `GET /user/ratings`
+- **Authentication**: Required (Bearer Token).
+
+##### 23. Retrieve Personal Chat Data
+
+- **Endpoint**: `GET /user/forum-replies`
+- **Authentication**: Required (Bearer Token).
+
 ## Project Structure (MVC)
 
 ```
