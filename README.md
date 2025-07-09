@@ -437,11 +437,15 @@ CREATE TABLE forum_replies (
 
 ## UML
 
-### Class Diagram
+### Use Case Diagram
 
 ![Use Case Diagram](https://github.com/user-attachments/assets/5e3becc6-d818-40be-a80e-cb059ce90c89)
 
+### Class Diagram
+
 ![Class Diagram](https://github.com/user-attachments/assets/49e71499-4a76-474a-b1e6-93eca50870a7)
+
+### Activity Diagram
 
 ![Activity Diagram](https://github.com/user-attachments/assets/979fbba5-409d-4e86-9ea4-c3aa8d65ad2e)
 
