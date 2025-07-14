@@ -70,6 +70,8 @@ This approach demonstrates proficiency in building both traditional monolithic a
 -   **User Profile**: Manage your activities, view your rating history, comments, and forum participation.
 -   **Account Management**: Update profile information or delete your account as needed.
 -   **Google Login**: Log in quickly and securely using your Google account, simplifying access to all features.
+-   **Admin Role**: Manage and monitor the overall platform to ensure its smooth operation
+-   **Editor Role**: Manage the films featured on Rinema
 
 ## Technologies
 
