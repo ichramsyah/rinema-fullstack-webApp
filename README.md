@@ -70,6 +70,8 @@ Pendekatan ini menunjukkan kemampuan dalam membangun baik aplikasi monolitik tra
 -   **Profil Pengguna**: Kelola aktivitas Anda, lihat riwayat rating, komentar, dan partisipasi di forum.
 -   **Manajemen Akun**: Perbarui informasi profil atau hapus akun sesuai kebutuhan.
 -   **Login dengan Google**: Masuk dengan cepat dan aman menggunakan akun Google, memudahkan akses ke semua fitur.
+-   **Role Admin**: Mengelola dan memantau keseluruhan platform agar berjalan dengan baik
+-   **Role Editor**: Mengelola film yang ditampilkan di Rinema 
 
 ## Teknologi
 
